@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="cart.js"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Food Delivery</h1>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="text-blue-500">Home</a></li>
+                <li><a href="cart.html" class="text-blue-500">Cart</a></li>
+                <li><a href="profile.html" class="text-blue-500">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container mx-auto p-4">
+        <section class="restaurant-banner bg-cover h-64" style="background-image: url('https://images.pexels.com/photos/2614641/pexels-photo-2614641.jpeg');">
+            <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+                <h2 class="text-white text-3xl font-bold">Restaurant Name</h2>
+            </div>
+        </section>
+        <section class="mt-4">
+            <h2 class="text-xl font-bold">Menu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <img src="https://images.pexels.com/photos/260767/pexels-photo-260767.jpeg" alt="Food Item" class="w-full h-32 object-cover rounded">
+                    <h3 class="text-lg font-semibold">Food Item Name</h3>
+                    <p>Price: $10.00</p>
+                    <button class="mt-2 w-full bg-blue-500 text-white py-2 rounded add-to-cart" 
+                            data-id="1" 
+                            data-name="Food Item Name" 
+                            data-price="10.00" 
+                            data-image="https://images.pexels.com/photos/260767/pexels-photo-260767.jpeg">
+                        Add to Cart
+                    </button>
+                </div>
+                <!-- Repeat for more menu items -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
